@@ -10,7 +10,7 @@ RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
 VOLUME ["/var/cache/nginx"]
 
-ADD default.conf /etc/nginx/site-available/default
+ADD default.conf /etc/nginx/sites-available/default
 
 ADD fancyindex /usr/share/nginx/fancyindex
 
